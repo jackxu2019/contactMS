@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ContactViewController.h"
+#import "GlobalHeader.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    UIWindow* window = [ UIWindow new ];
+    window.frame = [ UIScreen mainScreen ].bounds;
+    window.backgroundColor = [ UIColor whiteColor ];
+    self.window = window;
+    [ window makeKeyAndVisible ];
+    
+    ContactViewController* contact = [ ContactViewController new ];
+    UINavigationController* navi = [ [ UINavigationController alloc ] initWithRootViewController:contact ];
+    window.rootViewController = navi;
+    contact.title = STR( @"contactsNavTitle" );
     return YES;
 }
 
