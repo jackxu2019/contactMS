@@ -51,6 +51,8 @@ helper.snapUnitLengthForOffset = 55; //吸附的步长为55，这样scrollView�
 HorizontalLineCellsView也是一个可以脱离项目使用的通用控件类，具有滚动吸附功能。
 - 可以快速实现一行滚动的CollectionView,无须实现dataSource和delegate,简单的赋予cellsNumber就可快速呈现
 - 自动实现滚动吸附功能，可以自动吸附到每一个cell的中心，吸附发生后自动选择处于吸附位置的cell
+
+
 HorizontalLineCircularImageCellsView继承了HorizontalLineCellsView，提供圆形样式和选择样式
 - 每一个cell是一个imageView，可以自动设置为原形
 - 每一个cell表面覆盖了一个装饰图层，可用来绘制被选中状态等（ 默认实现的是一个圆环 ）
