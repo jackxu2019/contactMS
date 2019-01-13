@@ -14,6 +14,11 @@ Interview project for iOS Engineer of Microsoft
 - business目录 : 所有业务逻辑的封装（ 比如联系人信息的获取，头像的处理等 ）
 - ui目录 : 项目中出现的所有控件封装
 - assets目录 : 本地化文件，json数据，用户头像，其他图片资源等
+### 代码约定：
+
+- 字符串的写法 : 所有代码中出现的字符串一定要写成STR( @"XXX" ) ,其中STR( )是自定义的宏，对NSLocalizedStringFromTable的便捷写法。
+这主要考虑后期多国语言本地化。字符串常量全定义在assets/localize.strings里
+- 注意类中带有_mustInvoke_in_XXX或_mustInvoke_BeforeXXX前缀的方法，都是使用者必须要调用的方法
 ## 
 
 ### 几个重要类设计说明:
