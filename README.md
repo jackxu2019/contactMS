@@ -1,5 +1,6 @@
 # ContactMS
 Interview project for iOS Engineer of Microsoft
+# [English version - ](https://github.com/jackxu2019/contactMS/blob/master/readmeEn.md)
 ### 项目描述：
 
 读取联系人信息，显示联系人头像和基本信息。
